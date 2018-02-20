@@ -17,8 +17,12 @@ public class UserTaskDataProvider {
 	getTasksProlongingForGivenMonth(){}
 	getTasksProlongingForGivenYear(){}
 	
+	addTask(CurrentTask task){}
+	
 	updateTaskPlannedStartTime(Date newTime){}
 	updateTaskPriority(int  priority){}
+	updateTaskAsCompleted(String taskName){}
+	updateTaskAsPending(String taskName){}
 	
 	removeTask(String taskName){}
 	

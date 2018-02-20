@@ -1,7 +1,6 @@
 package com.sutendra.creations.TODOTaskDataManager.model;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
@@ -14,8 +13,8 @@ import com.sutendra.creations.TODOTaskDataManager.utils.AppConstants.TASK_STATUS
 @XmlRootElement
 public abstract class Task {
 	
-	private Date plannedTaskStartTime;
-	private Date plannedTaskCompleteTime;
+	private String plannedTaskStartTime;
+	private String plannedTaskCompleteTime;
 	private String taskName;
 	protected TASK_STATUS taskStatus;
 	private List<TASK_LEARNING_RULE> taskLearnings;
@@ -23,7 +22,7 @@ public abstract class Task {
 	
 	public Task(){}
 	
-	public Task(Date plannedTaskStartTime, Date plannedTaskCompleteTime, int taskPriority,String taskName,TASK_STATUS taskStatus) {
+	public Task(String  plannedTaskStartTime, String plannedTaskCompleteTime, int taskPriority,String taskName,TASK_STATUS taskStatus) {
 		super();
 		this.plannedTaskStartTime = plannedTaskStartTime;
 		this.plannedTaskCompleteTime = plannedTaskCompleteTime;
@@ -50,22 +49,22 @@ public abstract class Task {
 	
 
 
-	public Date getPlannedTaskStartTime() {
+	public String getPlannedTaskStartTime() {
 		return plannedTaskStartTime;
 	}
 
 
-	public void setPlannedTaskStartTime(Date plannedTaskStartTime) {
+	public void setPlannedTaskStartTime(String plannedTaskStartTime) {
 		this.plannedTaskStartTime = plannedTaskStartTime;
 	}
 
 
-	public Date getPlannedTaskCompleteTime() {
+	public String getPlannedTaskCompleteTime() {
 		return plannedTaskCompleteTime;
 	}
 
 
-	public void setPlannedTaskCompleteTime(Date plannedTaskCompleteTime) {
+	public void setPlannedTaskCompleteTime(String plannedTaskCompleteTime) {
 		this.plannedTaskCompleteTime = plannedTaskCompleteTime;
 	}
 

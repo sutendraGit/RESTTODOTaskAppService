@@ -1,6 +1,5 @@
 package com.sutendra.creations.TODOTaskDataManager.model;
 
-import java.util.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -13,7 +12,7 @@ public class PendingTask extends Task {
 	
 	public PendingTask(){}
 	
-	public PendingTask(Date plannedTaskStartTime, Date plannedTaskCompleteTime, int taskPriority,String taskName, TASK_STATUS taskStatus) {
+	public PendingTask(String plannedTaskStartTime, String plannedTaskCompleteTime, int taskPriority,String taskName, TASK_STATUS taskStatus) {
 		super(plannedTaskStartTime, plannedTaskCompleteTime, taskPriority,taskName, taskStatus);
 		procrasinationCount  = 1;
 	}

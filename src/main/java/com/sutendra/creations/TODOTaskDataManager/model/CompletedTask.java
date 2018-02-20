@@ -1,6 +1,5 @@
 package com.sutendra.creations.TODOTaskDataManager.model;
 
-import java.util.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -9,33 +8,33 @@ import com.sutendra.creations.TODOTaskDataManager.utils.AppConstants.TASK_STATUS
 @XmlRootElement
 public class CompletedTask extends Task {
 
-	private Date taskCompletedTime;
-	private Date taskStartedTime;
+	private String taskCompletedTime;
+	private String taskStartedTime;
 	private boolean isTaskCompletedSatisfactorily;
 	
 	public CompletedTask() {}
 
-	public CompletedTask(Date plannedTaskStartTime, Date plannedTaskCompleteTime, int taskPriority,
-			String taskName, TASK_STATUS taskStatus,Date taskCompletedTime, Date taskStartedTime, boolean isTaskCompletedSatisfactorily) {
+	public CompletedTask(String plannedTaskStartTime, String plannedTaskCompleteTime, int taskPriority,
+			String taskName, TASK_STATUS taskStatus,String taskCompletedTime, String taskStartedTime, boolean isTaskCompletedSatisfactorily) {
 		super(plannedTaskStartTime, plannedTaskCompleteTime, taskPriority, taskName, taskStatus);
 		this.taskCompletedTime = taskCompletedTime;
 		this.taskStartedTime = taskStartedTime;
 		this.isTaskCompletedSatisfactorily = isTaskCompletedSatisfactorily;
 	}
 
-	public Date getTaskCompletedTime() {
+	public String getTaskCompletedTime() {
 		return taskCompletedTime;
 	}
 
-	public void setTaskCompletedTime(Date taskCompletedTime) {
+	public void setTaskCompletedTime(String taskCompletedTime) {
 		this.taskCompletedTime = taskCompletedTime;
 	}
 
-	public Date getTaskStartedTime() {
+	public String getTaskStartedTime() {
 		return taskStartedTime;
 	}
 
-	public void setTaskStartedTime(Date taskStartedTime) {
+	public void setTaskStartedTime(String taskStartedTime) {
 		this.taskStartedTime = taskStartedTime;
 	}
 

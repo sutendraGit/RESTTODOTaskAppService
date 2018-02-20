@@ -8,4 +8,8 @@ public class AppConstants {
 	
 	public static enum TASK_STATUS {CURRENT,PENDING,COMPLETED};
 	public static enum TASK_LEARNING_RULE {DO,DONT};
+	
+	public static final String TODAY = "Today";
+	public static final String YESTERDAY  = "Yesterday";
+	public static final String BEFOREYESTERDAY  = "BeforeYesterday";
 }

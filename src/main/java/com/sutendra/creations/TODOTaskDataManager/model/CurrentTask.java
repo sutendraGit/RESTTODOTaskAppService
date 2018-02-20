@@ -1,6 +1,5 @@
 package com.sutendra.creations.TODOTaskDataManager.model;
 
-import java.util.Date;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -13,7 +12,7 @@ public class CurrentTask extends Task{
 	
 	public CurrentTask(){}
 
-	public CurrentTask(Date plannedTaskStartTime, Date plannedTaskCompleteTime,int taskPriority, String taskName, TASK_STATUS taskStatus) {
+	public CurrentTask(String plannedTaskStartTime, String plannedTaskCompleteTime,int taskPriority, String taskName, TASK_STATUS taskStatus) {
 		super(plannedTaskStartTime, plannedTaskCompleteTime, taskPriority,taskName, taskStatus);
 		isTaskInProgress = false;
 	}

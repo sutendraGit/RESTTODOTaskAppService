@@ -1,10 +1,16 @@
 package com.sutendra.creations.TODOTaskDataManager.controller;
 
+import java.util.List;
+
+import com.sutendra.creations.TODOTaskDataManager.model.TaskLearnings;
+
 public class TaskLearningDataProvider {
 	
-	getTaskLearnings(String taskName)
-	getTaskLearningsCount(String taskName)
+	public List<TaskLearnings> getTaskLearnings(String taskName){
+		return null;}
+	public int getTaskLearningsCount(String taskName){
+		return 0;}
 	
-	addTaskLearning(String taskName)
+	public void addTaskLearning(String taskName){}
 
 }
